@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub User Finder</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        html,body{
+            background-color: rgba(66, 52, 52, 0.628);
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="min-h-screen flex flex-col items-center pt-16 px-4 bg-black font-sans">
+
+  <!-- Title -->
+  <div class="text-center mb-10">
+    <h1 class="text-4xl font-extrabold text-white">GitHub User Finder</h1>
+    <p class="text-gray-400 mt-2">Search and view GitHub user profiles in style</p>
+  </div>
+
+  <!-- Search Input + Button Group -->
+  <form class = " p-1 mb-3 flex ">
+    <div class="flex w-full max-w-xl items-center space-x-2 bg-gray-800 rounded-md ">
+    <input 
+      type="text" 
+      placeholder="Enter GitHub username..." 
+      class=" Searchinpt flex-1 px-5 py-3 bg-gray-800 text-white placeholder-gray-400 border border-gray-800 rounded-l-xl focus:outline-none  "
+    />
+    <button 
+      type="submit" 
+      class=" searchbtn px-5 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-200 "
+    >
+      Search
+    </button>
+    </div>
+  </form>
+
+  
+
+  <!-- GitHub User Card -->
+  <div class=" card bg-gray-800 text-white rounded-xl shadow-lg p-9 w-full max-h-[500px] overflow-y-auto border-gray-700 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
+    <div class=" card grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6  shadow-xl/20">
+    </div>
+  </div>
+  <script src="async.js"></script>
+<!-- <script src="pro.js"></script> -->
+</body>
+</html>
